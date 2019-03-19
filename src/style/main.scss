@@ -8,11 +8,11 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 100vh;
-  min-height: 100vh;
+  height: 95vh;
+  min-height: 95vh;
   @media (orientation: portrait) {
-    height: 85vh;
-    min-height: 85vh;
+    height: 90vh;
+    min-height: 90vh;
   }
 }
 
@@ -32,8 +32,8 @@ body {
   flex: 1;
   margin: 0 auto;
   svg {
-    height: 50%;
+    height: 100%;
     width: 100%;
-    max-width: 100%;
+    max-width: calc(50vh / 4);
   }
 }
