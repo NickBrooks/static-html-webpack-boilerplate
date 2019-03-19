@@ -7,9 +7,13 @@ body {
 .experience {
     display: flex;
     flex-direction: column;
+    text-align: center;
     height: 100vh;
     min-height: 100vh;
-    text-align: center;
+    @media (orientation: portrait) {
+        height: 90vh;
+        min-height: 90vh;
+    }
 }
 
 .flex {
