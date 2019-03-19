@@ -29,10 +29,6 @@ body {
     margin: 0 auto;
     svg {
         height: 50%;
+        max-width: 100%;
     }
-}
-
-svg {
-    max-width: 100%;
-    width: 100%;
 }
