@@ -1,38 +1,39 @@
 body {
-    background: #ddd;
-    padding: 0;
-    margin: 0;
+  background: #ddd;
+  padding: 0;
+  margin: 0;
 }
 
 .experience {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    min-height: 100vh;
-    @media (orientation: portrait) {
-        height: 90vh;
-        min-height: 90vh;
-    }
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  min-height: 100vh;
+  @media (orientation: portrait) {
+    height: 90vh;
+    min-height: 90vh;
+  }
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header {
-    height: 60px;
-    justify-content: center;
-    display: flex;
+  height: 60px;
+  justify-content: center;
+  display: flex;
 }
 
 .smiley {
-    flex: 1;
-    margin: 0 auto;
-    svg {
-        height: 50%;
-        max-width: 100%;
-    }
+  flex: 1;
+  margin: 0 auto;
+  svg {
+    height: 50%;
+    width: 100%;
+    max-width: 100%;
+  }
 }
