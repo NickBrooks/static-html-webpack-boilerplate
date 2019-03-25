@@ -1,77 +1,108 @@
 $radius: 5px;
-$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
-0 1px 2px rgba(0, 0, 0, 0.14);
+$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.14);
+
 body {
-    font-family: "Alegreya Sans", sans-serif;
-    background: #eaeaea;
-    color: #424242;
-    padding: 0;
-    margin: 0;
+  font-family: "Alegreya Sans", sans-serif;
+  background: #eaeaea;
+  color: #424242;
+  padding: 0;
+  margin: 0;
 }
 
 img {
-    display: block;
-    margin: 50px auto;
+  display: block;
+  margin: 50px auto;
 }
 
 .header {
-    background: #fafafa;
-    padding: 10px 30px;
-    margin-bottom: 20px;
-    box-shadow: $box-shadow;
-    display: flex;
-    align-items: center;
-    .sidebar-toggle {
-        margin-right: 20px;
-        span {
-            color: #aaa;
-            font-size: 2em;
-        }
+  background: #fafafa;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  box-shadow: $box-shadow;
+  display: flex;
+  align-items: center;
+
+  .sidebar-toggle {
+    margin-right: 20px;
+
+    span {
+      color: #aaa;
+      font-size: 2em;
     }
-    h2 {
-        margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+    margin: 0;
+    color: #888;
+
+    span {
+      color: #177e89;
+      margin-left: 5px;
+      font-size: 0.8em;
     }
-    .subtitle {
-        font-size: 1.2em;
-        margin: 0;
-        color: #888;
-        span {
-            color: #177e89;
-            margin-left: 5px;
-            font-size: 0.8em;
-        }
-    }
+  }
 }
 
 .board {
-    display: flex;
-    .column {
-        flex: 1;
+  display: flex;
+
+  .column {
+    flex: 1;
+  }
+
+  .step {
+    border-radius: $radius;
+    margin: 0 10px;
+    background: #ddd;
+    box-shadow: $box-shadow;
+    padding: 10px;
+
+    h3 {
+      margin: 0;
+      padding: 0 10px;
+      font-weight: 500;
     }
-    .step {
-        border-radius: $radius;
-        margin: 0 10px;
-        background: #ddd;
-        box-shadow: $box-shadow;
-        padding: 10px;
-        h3 {
-            margin: 0;
-            padding: 0 10px;
-            font-weight: 500;
-        }
-        div {
-            padding: 15px 10px;
-            background: #fafafa;
-            border-radius: $radius;
-            margin: 10px 0;
-            box-shadow: $box-shadow;
-        }
-        div.add-task {
-            color: #666;
-            background: #eee;
-            font-weight: 500;
-            border: 1px dashed #aaa;
-            box-shadow: none;
-        }
+
+    div {
+      padding: 15px 10px;
+      background: #fafafa;
+      border-radius: $radius;
+      margin: 10px 0;
+      box-shadow: $box-shadow;
     }
+
+    div.add-task {
+      color: #666;
+      background: #eee;
+      font-weight: 500;
+      border: 1px dashed #aaa;
+      box-shadow: none;
+    }
+
+    // https://coolors.co/7a8594-988196-e97758-ffbc30-7bdd88
+    &.backlog {
+      border-top: 7px solid #7A8594;
+    }
+
+    &.queued {
+      border-top: 7px solid #988196;
+    }
+
+    &.in-progress {
+      border-top: 7px solid #e97758;
+    }
+
+    &.review {
+      border-top: 7px solid #ffbc30;
+    }
+
+    &.done {
+      border-top: 7px solid #7bdd88;
+    }
+  }
 }
