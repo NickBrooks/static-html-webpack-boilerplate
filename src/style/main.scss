@@ -1,7 +1,9 @@
 $radius: 5px;
+$box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
+0 1px 2px rgba(0, 0, 0, 0.14);
 body {
     font-family: "Alegreya Sans", sans-serif;
-    background: #fafafa;
+    background: #eaeaea;
     color: #424242;
 }
 
@@ -19,6 +21,7 @@ img {
         border-radius: $radius;
         margin: 0 10px;
         background: #ddd;
+        box-shadow: $box-shadow;
         padding: 10px;
         h4 {
             margin: 0;
@@ -30,7 +33,7 @@ img {
             background: #fafafa;
             border-radius: $radius;
             margin: 10px 0;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.14);
+            box-shadow: $box-shadow;
         }
         div.add-task {
             color: #666;
