@@ -8,14 +8,34 @@
       href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,500,500i,700,700i"
       rel="stylesheet"
     />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+      integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+      crossorigin="anonymous"
+    ></script>
     <title>Static HTML Site Boilerplate</title>
   </head>
 
   <body>
+    <div class="header">
+      <div class="sidebar-toggle">
+        <span><i class="fas fa-bars"></i></span>
+      </div>
+      <div class="column">
+        <h2>
+          Nick's first megaboard
+        </h2>
+        <p class="subtitle">
+          #product <span><i class="fas fa-user-friends"></i> 3 users</span>
+        </p>
+      </div>
+    </div>
+
     <div class="board">
       <div class="column">
         <div class="step backlog">
-          <h4>Backlog</h4>
+          <h3>Backlog</h3>
           <div>Do something</div>
           <div>Do something</div>
           <div>Do something</div>
@@ -28,7 +48,7 @@
       </div>
       <div class="column">
         <div class="step queued">
-          <h4>Queued</h4>
+          <h3>Queued</h3>
           <div>Do something</div>
           <div>Do something</div>
           <div class="add-task">Add new +</div>
@@ -36,20 +56,20 @@
       </div>
       <div class="column">
         <div class="step in-progress">
-          <h4>In progress</h4>
+          <h3>In progress</h3>
           <div>Do something</div>
         </div>
       </div>
       <div class="column">
         <div class="step review">
-          <h4>Review</h4>
+          <h3>Review</h3>
           <div>Do something</div>
           <div>Do something</div>
         </div>
       </div>
       <div class="column">
         <div class="step done">
-          <h4>Done</h4>
+          <h3>Done</h3>
           <div>Do something</div>
           <div>Do something</div>
           <div>Do something</div>

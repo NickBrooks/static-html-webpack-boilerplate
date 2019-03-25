@@ -5,11 +5,42 @@ body {
     font-family: "Alegreya Sans", sans-serif;
     background: #eaeaea;
     color: #424242;
+    padding: 0;
+    margin: 0;
 }
 
 img {
     display: block;
     margin: 50px auto;
+}
+
+.header {
+    background: #fafafa;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
+    .sidebar-toggle {
+        margin-right: 20px;
+        span {
+            color: #aaa;
+            font-size: 2em;
+        }
+    }
+    h2 {
+        margin: 0;
+    }
+    .subtitle {
+        font-size: 1.2em;
+        margin: 0;
+        color: #888;
+        span {
+            color: #177e89;
+            margin-left: 5px;
+            font-size: 0.8em;
+        }
+    }
 }
 
 .board {
@@ -23,7 +54,7 @@ img {
         background: #ddd;
         box-shadow: $box-shadow;
         padding: 10px;
-        h4 {
+        h3 {
             margin: 0;
             padding: 0 10px;
             font-weight: 500;
