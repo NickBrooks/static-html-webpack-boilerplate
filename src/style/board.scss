@@ -1,0 +1,63 @@
+.board {
+  display: flex;
+
+  div:first-child .step {
+    margin-left: 20px;
+  }
+
+  div:last-child .step {
+    margin-right: 20px;
+  }
+
+  .step {
+    border-radius: $radius;
+    margin: 0 10px;
+    background: #ddd;
+    box-shadow: $box-shadow;
+    padding: 10px;
+
+    h3 {
+      margin: 0;
+      padding: 0 10px;
+      font-weight: 600;
+    }
+
+    div {
+      line-height: 1.4em;
+      padding: 10px 10px;
+      background: #fafafa;
+      border-radius: $radius;
+      margin: 10px 0;
+      box-shadow: $box-shadow;
+    }
+
+    div.add-task {
+      color: #666;
+      background: #eee;
+      font-weight: 500;
+      border: 1px dashed #aaa;
+      box-shadow: none;
+    }
+
+    // https://coolors.co/7a8594-988196-e97758-ffbc30-7bdd88
+    &.backlog {
+      border-top: 7px solid #7a8594;
+    }
+
+    &.queued {
+      border-top: 7px solid #988196;
+    }
+
+    &.in-progress {
+      border-top: 7px solid #e97758;
+    }
+
+    &.review {
+      border-top: 7px solid #ffbc30;
+    }
+
+    &.done {
+      border-top: 7px solid #7bdd88;
+    }
+  }
+}
