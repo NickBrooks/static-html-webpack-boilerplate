@@ -12,6 +12,19 @@ $sidebar-color: #c5cad0;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+
+        &.notification {
+            font-weight: 600;
+            color: #fff;
+
+            span {
+                background-color: #5592F4;
+                padding: 1px 7px;
+                border-radius: 5px;
+                font-size: 0.7em;
+                margin-left: 4px;
+            }
+        }
     }
 
     .sidebar-header {
@@ -70,8 +83,8 @@ $sidebar-color: #c5cad0;
             }
 
             em {
-              color: #7989a0;
-              font-size: 0.9em;
+                color: #7989a0;
+                font-size: 0.9em;
             }
 
             .category-header {
