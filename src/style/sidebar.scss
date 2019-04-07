@@ -29,9 +29,10 @@ $sidebar-color: #c5cad0;
 
     .sidebar-header {
         display: flex;
-        padding: 10px $sidebar-padding;
+        padding: 12px $sidebar-padding 13px;
         margin-bottom: 20px;
         align-items: center;
+        background-color: #37455a;
 
         h3 {
             color: #fff;
