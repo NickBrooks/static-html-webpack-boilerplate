@@ -5,7 +5,7 @@
 
 body {
     font-family: "Source Sans Pro", sans-serif;
-    background: #eaeaea;
+    background: #f5f8fa;
     color: #333;
     padding: 0;
     margin: 0;
@@ -29,6 +29,32 @@ a {
     color: $blue;
     text-decoration: none;
     font-weight: 600;
+}
+
+.card {
+    transition: 0.2s;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-style: none;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .07);
+    border-radius: 3px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+    background-image: linear-gradient(180deg, #fff, #fff);
+    box-shadow: 0 2px 7px 0 rgba(5, 34, 97, .1);
+
+    &:hover {
+        box-shadow: 0 2px 7px 0 rgba(5, 34, 97, .2);
+    }
 }
 
 .flex-1 {

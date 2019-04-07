@@ -1,25 +1,25 @@
 .header {
-  background: #fafafa;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  box-shadow: $box-shadow;
-  display: flex;
-  align-items: center;
+    background: #fafafa;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    box-shadow: $box-shadow;
+    display: flex;
+    align-items: center;
 
-  h2 {
-    margin: 0;
-    font-weight: 600;
-  }
-
-  .subtitle {
-    font-size: 1em;
-    margin: 3px 0 0;
-    color: #4A6C6F;
-    font-weight: 600;
-
-    svg {
-      margin-right: 2px;
-      font-size: 0.9em;
+    h2 {
+        margin: 0;
+        font-weight: 600;
     }
-  }
+
+    .subtitle {
+        font-size: 1em;
+        margin: 3px 0 0;
+        color: #4A6C6F;
+        font-weight: 600;
+
+        svg {
+            margin-right: 2px;
+            font-size: 0.9em;
+        }
+    }
 }
