@@ -14,7 +14,7 @@ $sidebar-color: #c5cad0;
         text-overflow: ellipsis;
 
         &.notification {
-            font-weight: 600;
+            font-weight: 600 !important;
             color: #fff;
 
             span {
@@ -67,7 +67,6 @@ $sidebar-color: #c5cad0;
 
             a {
                 margin: 0;
-
                 color: $sidebar-color;
                 text-decoration: none;
             }
@@ -76,6 +75,7 @@ $sidebar-color: #c5cad0;
                 font-size: 1.15em;
                 margin: 0;
                 padding: 2px $sidebar-padding;
+                font-weight: 500;
 
                 &:hover {
                     background: #4e6079;
@@ -95,13 +95,12 @@ $sidebar-color: #c5cad0;
 
                 svg {
                     margin-left: 5px;
-                    font-size: 0.85em;
                     color: #c5cad0;
                 }
             }
 
             svg {
-                font-size: 0.9em;
+                font-size: 0.8em;
                 margin-right: 5px;
             }
         }

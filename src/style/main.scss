@@ -4,23 +4,29 @@
 @import "./board.scss";
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  background: #eaeaea;
-  color: #424242;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
+    font-family: "Source Sans Pro", sans-serif;
+    background: #eaeaea;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9em;
 }
 
 img {
-  display: block;
-  margin: 50px auto;
+    display: block;
+    margin: 50px auto;
 }
 
 .column {
-  flex: 1;
+    flex: 1;
 }
 
 .body {
-  display: flex;
+    display: flex;
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+    font-weight: 600;
 }
