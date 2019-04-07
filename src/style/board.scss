@@ -43,19 +43,19 @@
 
         &.backlog {
             .step-header {
-                background: #7a8594;
+                background: bottom left 30% no-repeat, linear-gradient(65deg, #A96AD4, #B27AD9);
             }
         }
 
         &.next-up {
             .step-header {
-                background: #988196;
+                background: bottom left 30% no-repeat, linear-gradient(65deg, #F98C5B, #FA976B);
             }
         }
 
         &.in-progress {
             .step-header {
-                background: #5592F4;
+                background: bottom left 30% no-repeat, linear-gradient(65deg, #5592F4, #73a6f8);
             }
 
             .card {
@@ -65,7 +65,7 @@
 
         &.done {
             .step-header {
-                background: #7bdd88;
+                background: bottom left 30% no-repeat, linear-gradient(65deg, #7bdd88, #8ce497);
             }
 
             svg {
