@@ -1,0 +1,28 @@
+.agenda {
+    display: flex;
+    margin-top: 70px;
+
+    .agenda-board {
+        margin-bottom: 30px;
+
+        h2 {
+            margin: 15px;
+            font-weight: 600;
+
+            span {
+                margin-left: 2px;
+                color: #FBBCA0;
+                font-size: 0.9em;
+            }
+        }
+
+        .card {
+            font-weight: 600;
+
+            svg {
+                color: #ddd;
+                margin-right: 5px;
+            }
+        }
+    }
+}
