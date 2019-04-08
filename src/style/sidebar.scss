@@ -4,7 +4,7 @@ $sidebar-color: #c5cad0;
 .sidebar {
     width: 250px;
     background: #3f4e64;
-    height: 100vh;
+    min-height: 100vh;
     color: $sidebar-color;
     box-sizing: border-box;
 

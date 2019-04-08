@@ -1,0 +1,17 @@
+.boards {
+    display: flex;
+    margin: 0 20px;
+
+    .boards-div {
+        margin-bottom: 30px;
+
+        h2 {
+            margin: 15px;
+
+            svg {
+                color: #888;
+                font-size: 0.9em;
+            }
+        }
+    }
+}
