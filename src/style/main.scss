@@ -10,6 +10,9 @@ body {
     background: #eee;
     line-height: 1.5;
     font-size: 0.9em;
+    padding: 0;
+    margin: 0;
+    overflow-x: none;
 }
 
 img {
@@ -23,6 +26,13 @@ h2,
 h1 {
     margin: 0;
     padding: 0;
+}
+
+.top {
+    width: 1519px;
+    background-size: 1530px 184px;
+    height: 184px;
+    background-position: center;
 }
 
 .clear {
