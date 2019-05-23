@@ -137,6 +137,7 @@ h1 {
 
 .staff {
     padding: $padding;
+    border-bottom: 1px solid #eaeaea;
 
     h4 {
         font-weight: bold;
@@ -150,6 +151,32 @@ h1 {
 
         .image {
             width: 40px;
+            margin-right: 10px;
+        }
+    }
+}
+
+.multi-choice {
+    padding: $padding;
+    border-bottom: 1px solid #eaeaea;
+
+    h4 {
+        font-weight: bold;
+    }
+
+    .subtitle {
+        margin: 5px 0;
+        color: $gray;
+        font-size: 0.8em;
+    }
+
+    .selected {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .icon {
+            width: 25px;
             margin-right: 10px;
         }
     }
