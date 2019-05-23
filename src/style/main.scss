@@ -7,6 +7,8 @@ $padding: 15px;
 body {
     font-family: 'Muli', sans-serif;
     background: #eee;
+    line-height: 1.5;
+    font-size: 0.9em;
 }
 
 img {
@@ -88,7 +90,7 @@ h1 {
 }
 
 .header {
-    font-size: 0.8em;
+    font-size: 0.9em;
     border-bottom: 1px solid #d6d9de;
     padding: $padding;
 
@@ -119,18 +121,31 @@ h1 {
         }
 
         h5 {
-            font-size: 0.7em;
+            font-size: 0.8em;
             color: $gray;
         }
 
         p {
             width: 50px;
-            font-size: 0.8em;
+            font-size: 0.9em;
             margin: 5px auto 0;
             padding: 5px;
             background: $awesome;
             color: #fff;
             border-radius: $radius;
+        }
+    }
+
+    .staff-member {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+
+        .image {
+            width: 47px;
+            margin-right: 10px;
         }
     }
 }
