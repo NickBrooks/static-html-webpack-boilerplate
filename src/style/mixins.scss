@@ -1,0 +1,9 @@
+@mixin side-arrow($color) {
+    .arrow-left .arrow {
+        border-right: 10px solid $color;
+    }
+
+    .select-area {
+        background-color: $color;
+    }
+}

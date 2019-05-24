@@ -1,7 +1,14 @@
+@import './mixins.scss';
 $gray: #999;
 $light-gray: hey;
 $awesome: #1FD466;
-$good: #FFC200;
+$good: #24c6fa;
+$not-great: #FFC200;
+$awful: #ff5871;
+$awesome-muted: #5CDF8F;
+$good-muted: #5FD5FB;
+$not-great-muted: #FFD245;
+$awful-muted: #FF677D;
 $radius: 5px;
 $padding: 15px;
 
@@ -65,8 +72,12 @@ h1 {
         &.nps-label {
             font-size: 0.9em;
 
-            &.success {
+            &.promoter {
                 color: $awesome;
+            }
+
+            &.detractor {
+                color: $awful;
             }
         }
 
@@ -85,16 +96,30 @@ h1 {
         height: 0;
         border-top: 10px solid transparent;
         border-bottom: 10px solid transparent;
-
         border-right: 10px solid #d6d9de;
     }
 }
 
 .select-area {
-    width: 60px;
-    background: #d6d9de;
+    width: 10px;
     border-radius: 5px 0 0 5px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.04), 1px 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.awesome {
+    @include side-arrow($awesome-muted);
+}
+
+.good {
+    @include side-arrow($good-muted);
+}
+
+.not-great {
+    @include side-arrow($not-great-muted);
+}
+
+.awful {
+    @include side-arrow($awful-muted);
 }
 
 .comment-area {
@@ -110,7 +135,23 @@ h1 {
     padding: $padding;
 
     .location {
+        display: flex;
         float: left;
+        align-items: center;
+
+        input[type=checkbox] {
+            /* Double-sized Checkboxes */
+            -ms-transform: scale(1.5);
+            /* IE */
+            -moz-transform: scale(1.5);
+            /* FF */
+            -webkit-transform: scale(1.5);
+            /* Safari and Chrome */
+            -o-transform: scale(1.5);
+            /* Opera */
+            transform: scale(1.5);
+            margin-right: 10px;
+        }
     }
 
     .date {
