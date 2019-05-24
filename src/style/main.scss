@@ -187,28 +187,23 @@ h1 {
         }
 
         p {
-            width: 70px;
             font-size: 0.9em;
-            margin: 5px auto 0;
-            padding: 5px;
-
-            color: #fff;
-            border-radius: $radius;
+            font-weight: bold;
 
             &.awesome {
-                background: $awesome-muted;
+                color: $awesome;
             }
 
             &.good {
-                background: $good-muted;
+                color: $good;
             }
 
             &.not-great {
-                background: $not-great-muted;
+                color: $not-great;
             }
 
             &.awful {
-                background: $awful-muted;
+                color: $awful;
             }
         }
     }
