@@ -1,9 +1,21 @@
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  text-align: center;
+.banner {
+    background: #ffc9c3;
+    padding: 10px 0;
 }
 
-img {
-  display: block;
-  margin: 50px auto;
+.hero-header {
+    background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .title {
+        color: #fff;
+        font-family: 'Sacramento', cursive;
+        font-size: 4em;
+    }
+
+    .subtitle {
+        color: #ddd;
+    }
 }
